@@ -1,4 +1,26 @@
 {
+  "title": "Policial Law",
+  "name": "Tau-TacTic9369",
+  "version": "7.0.6",
+  "scripts": {
+      "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+      "build:assets": "node scripts/build-assets.js",
+      "build:pug": "node scripts/build-pug.js",
+      "build:scripts": "node scripts/build-scripts.js",
+      "build:scss": "node scripts/build-scss.js",
+      "clean": "node scripts/clean.js",
+      "start": "npm run build && node scripts/start.js",
+      "start:debug": "npm run build && node scripts/start-debug.js"
+  },
+  "description": "A grayscale one page HTML theme for Bootstrap.",
+  "keywords": [
+      "css",
+      "sass",
+      "html",
+      "responsive",
+      "theme",
+      "template"
+  ],
   "dependencies": {
     "bootstrap": "^5.3.2"
   },
